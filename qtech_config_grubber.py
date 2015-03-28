@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-__author__ = 'gostepan'
+__author__ = 'wonderg'
 
 import requests
 import re
@@ -33,7 +33,7 @@ qtech_rev1_folder = '/var/ftp/pub/qtech_rev1_cfg_bkp/'
 qtech_rev2_folder = '/home/nskharic/scripts/qtech_rev2_cfg_bkp/'
 qtech_rev3_folder = '/home/nskharic/scripts/qtech_rev3_cfg_bkp/'
 
-path = str.encode("ip_list.txt")
+path = str.encode("ip_list.txt") # File with ip list of devices which you want to backup
 
 def download_file(ip, url, filename, folder):
     local_filename = folder + "/" + ip + " " + filename+".cfg"
